@@ -18,7 +18,14 @@ xmlns:mvc="sap.ui.core.mvc">
                     }
                 }"
                 numberUnit="{view>/currency}"
-                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"/>
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}">
+                <firstStatus>
+                    <ObjectStatus text="{
+                        path: 'invoice>Status',
+                        formatter: '.formatter.statusText'
+                    }"/>
+                </firstStatus>
+                </ObjectListItem>
         </items>
     </List>
 </mvc:View>
