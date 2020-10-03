@@ -6,10 +6,20 @@
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
-                        <Panel headerText="{i18n>helloPanelTitle}">
+                        <Panel headerText="{i18n>helloPanelTitle}"
+                               class="sapUiResponsiveMargin"
+							   width="auto">
                             <content>
-                                <Button text="{i18n>showHelloButtonText}" press=".onShowHello"/>
-                                <Input value="{/recipient/name}" description="Hello {/recipient/name }" valueLiveUpdate="true" width="60%"/>
+                                <Button text="{i18n>showHelloButtonText}" 
+                                        press=".onShowHello"
+                                        class="sapUiSmallMarginEnd"/>
+                                <Input value="{/recipient/name}" 
+                                       description="Hello {/recipient/name }" 
+                                       valueLiveUpdate="true" 
+                                       width="60%"/>
+                                <Text 
+                                    text="Hello {/recipient/name}"
+                                    class="sapUiSmallMargin"/>
                             </content>
                         </Panel>
                     </content>
