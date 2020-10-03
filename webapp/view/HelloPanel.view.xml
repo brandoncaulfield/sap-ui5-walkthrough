@@ -6,14 +6,15 @@
         class="sapUiResponsiveMargin" 
         width="auto"
         expandable="{device>/system/phone}"
-        exapnded="{= !${device>/system/phone} }">
+        expanded="{= !${device>/system/phone} }">
         <content>
             <Button
                 id="helloDialogButton"
                 icon="sap-icon://world"
                 text="{i18n>openDialogButtonText}"
                 press=".onOpenDialog"
-                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
+                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"
+                accessibleRole="Region"/>
             <Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton"/>
             <Input value="{/recipient/name}" description="Hello {/recipient/name }" valueLiveUpdate="true" width="60%"/>
             <FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
