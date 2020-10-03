@@ -73,7 +73,7 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "sap.ui.demo.walkthrough.i18n.i18n",
-                    "suppoertedLocales": [""],
+                    "supportedLocales": [""],
                     "fallbackLocale": ""
                 },
                 "uri": "<uriRelativeToManifest>"
