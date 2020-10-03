@@ -11,7 +11,7 @@
 	data-sap-ui-libs="sap.m"
 	data-sap-ui-compatVersion="edge"
 	data-sap-ui-async="true"
-	data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
+	data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
 	data-sap-ui-resourceroots='{
 		"sap.ui.demo.walkthrough": "./"
 	}'>
@@ -19,5 +19,7 @@
 </script>
 </head>
 <body class="sapUiBody" id="content">
+	<div data-sap-ui-component data-name="sap.ui.demo.walkthrough" data-id="container" data-settings='{"id" : "walkthrough"}'>
+	</div>
 </body>
 </html>
