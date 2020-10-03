@@ -80,7 +80,7 @@
                 "uri": "<uriRelativeToManifest>"
             },
             "invoice": {
-                "odataSource": "invoiceRemote"
+                "dataSource": "invoiceRemote"
             },
             "": {
                 "dataSource": "<dataSourceAlias>",
