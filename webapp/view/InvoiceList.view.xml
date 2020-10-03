@@ -17,7 +17,8 @@ xmlns:mvc="sap.ui.core.mvc">
                         showMeasure: false
                     }
                 }"
-                numberUnit="{view>/currency}"/>
+                numberUnit="{view>/currency}"
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"/>
         </items>
     </List>
 </mvc:View>
