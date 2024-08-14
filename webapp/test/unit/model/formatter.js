@@ -23,13 +23,13 @@ sap.ui.define([
 		// Arrange
 		// this.stub() does not support chaining and always returns the right data
 		// even if a wrong or empty parameter is passed.
-		var oModel = this.stub();
+		var oModel = sinon.stub();
 		oModel.withArgs("i18n").returns(this._oResourceModel);
 		var oViewStub = {
 			getModel: oModel
 		};
 		var oControllerStub = {
-			getView: this.stub().returns(oViewStub)
+			getView: sinon.stub().returns(oViewStub)
 		};
 
 		// System under test
